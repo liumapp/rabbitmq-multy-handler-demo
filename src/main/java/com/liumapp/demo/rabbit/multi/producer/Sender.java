@@ -21,7 +21,7 @@ public class Sender {
 
     public void send () {
         String context = "hello " + new Date();
-        this.amqpTemplate.convertAndSend("hello" , context);
+        this.amqpTemplate.convertAndSend("hetest-queuello" , context);
     }
 
 }
