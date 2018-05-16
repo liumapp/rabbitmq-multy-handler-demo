@@ -1,5 +1,7 @@
 package com.liumapp.demo.rabbit.multi.config;
 
+import org.springframework.amqp.core.Queue;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
@@ -12,6 +14,9 @@ import org.springframework.context.annotation.ImportResource;
 @ImportResource(locations = {"classpath:/spring/applicationContext*.xml"})
 public class Config {
 
-
+    @Bean
+    public Queue helloQueue () {
+        return new Queue("test-queue");
+    }
 
 }
