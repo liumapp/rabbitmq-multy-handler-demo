@@ -17,7 +17,7 @@ import org.springframework.context.annotation.ImportResource;
 public class Config {
 
     @Bean
-    public Queue helloQueue () {
+    public Queue testQueue () {
         return new Queue("test-queue");
     }
 

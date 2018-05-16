@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.Random;
 
 /**
  * @author liumapp
@@ -20,8 +21,8 @@ public class Sender {
     private AmqpTemplate amqpTemplate;
 
     public void send () {
-        String context = "hello " + new Date();
-        this.amqpTemplate.convertAndSend("hetest-queuello" , context);
+        String context = "hello " + new Date() + new Random();
+        this.amqpTemplate.convertAndSend("test-queue" , context);
     }
 
 }

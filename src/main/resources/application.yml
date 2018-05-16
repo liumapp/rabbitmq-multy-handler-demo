@@ -11,7 +11,7 @@ spring:
     cache: false
   rabbitmq:
       port: 5672
-      host: rabbitmq
+      host: localhost
       username: springcloud
       password: 123456
 
