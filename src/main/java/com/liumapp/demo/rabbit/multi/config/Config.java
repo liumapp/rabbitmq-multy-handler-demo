@@ -6,9 +6,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
 /**
- * Created by liumapp on 9/28/17.
- * E-mail:liumapp.com@gmail.com
- * home-page:http://www.liumapp.com
+ * @author liumapp
+ * @file Config.java
+ * @email liumapp.com@gmail.com
+ * @homepage http://www.liumapp.com
+ * @date 5/16/18
  */
 @Configuration
 @ImportResource(locations = {"classpath:/spring/applicationContext*.xml"})
