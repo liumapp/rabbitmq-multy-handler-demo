@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @homepage http://www.liumapp.com
  * @date 5/16/18
  */
-@SpringBootApplication(scanBasePackages = {"com.liumapp"})
+@SpringBootApplication
 public class Main {
 
     public static void main(String[] args) {
